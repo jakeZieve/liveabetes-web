@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="main.css" type="text/css" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map-canvas { height: 100% }
+    </style>
+<head>
+<!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/JavaScript">
+    function timedRefresh(timeoutPeriod) {
+        setTimeout("location.reload(true);",timeoutPeriod);
+    }
+</script> -->
+
+<!-- firebase init -->
+<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+
+<!-- user authentication -->
+<script type='text/javascript'
+        src='https://cdn.firebase.com/v0/firebase-auth-client.js'>
+        function registerUser(email, password){
+            authClient.createUser(email, password, function(error, user){
+                if(!error){
+                    console.log('User Id: ' + user.id + ', Email: ' + user.email);
+                }
+            })
+        }
+
+        function loginUser(password){
+            authClient.login('password', {
+                email: '<email@domain.com>',
+                password: '<password>;'
+            });
+        }
+</script>
+</head>
+<body onload="JavaScript:timedRefresh(3000);">
+    <!-- init firebase -->
+    <script>var fb = new Firebase('https://uajjb09b5uc.firebaseio-demo.com/');</script>
+
+    <div id="container">
+        <!-- header header header header header -->
+        <div id="header">
+            <div id="headercontainer">
+                <div id="logo"><a href="../web/main.html"><img src="../web/graphics/banner.png"/></a></div>
+                <div id="navcontainer">
+                    <div id="network">
+                        <a href="#"><img src="../web/graphics/facebook.png"
+                            onmouseout="this.src='../web/graphics/facebook.png'"
+                            onmouseover="this.src='../web/graphics/facebookhover.png'"/></a>
+                        <a href="#"><img src="../web/graphics/twitter.png"
+                            onmouseout="this.src='../web/graphics/twitter.png'"
+                            onmouseover="this.src='../web/graphics/twitterhover.png'"/></a>
+                        <a href="#"><img src="../web/graphics/linkedin.png"
+                            onmouseout="this.src='../web/graphics/linkedin.png'"
+                            onmouseover="this.src='../web/graphics/linkedinhover.png'"/></a>
+                        <a href="#"><img src="../web/graphics/mail.png"
+                            onmouseout="this.src='../web/graphics/mail.png'"
+                            onmouseover="this.src='../web/graphics/mailhover.png'"/></a>
+                        </div>
+                    <div id="navbar"><ul><li><a href="#about">about</a></li><li><a href="#data">data</a></li><li><a href="#contact">contact</a></li><li><a href="#reg">register</a></li></ul></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- spacefiller spacefiller spacefiller spacefiller -->
+        <div class="spacefiller">
+            <img id="circle" src="../web/graphics/circle.png"/>
+            <div id="signup">
+                <form action="demo_form.asp">
+                    email: <input type="text" name="email" id='useremail' value="so@liveabetes.com"><br>
+                    password: <input type="password" name="pw" id='userpassword'><br>
+                <input type="submit" value="sign in" onclick="registerUser(document.getElementById('useremail').value, document.getElementById('userpassword'))">
+                </form>
+            </div>
+        </div>
+
+        <!-- content content content content content -->
+        <div id="content">
+            <div class="headline"><span class="aligner"><a name="about">about</span></div>
+            <div id="aboutsection">
+            <div class="col">
+                <div id="faces">
+                    <div class="round-button user-pic-xlarge" data-id="jak" style="background-image:url('http://s3.amazonaws.com/hackathon-io/profiles/images/000/015/270/thumb/283699_10101177408126503_1163345496_n.jpg?1370312578')"></div>
+                    <div class="round-button user-pic-xlarge" data-id="cam" style="background-image:url('http://s3.amazonaws.com/hackathon-io/profiles/images/000/015/392/thumb/324829_102595056557966_36257035_o.jpg?1370313029')"></div>
+                    <br><span style="text-align: center">co-founders</span><br>
+                    <div class="round-button user-pic-xlarge" data-id="ste" style="background-image:url('http://s3.amazonaws.com/hackathon-io/profiles/images/000/015/393/thumb/IMG_0680.JPG?1368774251')"></div>
+                    <div class="round-button user-pic-xlarge" data-id="so" style="background-image:url('http://s3.amazonaws.com/hackathon-io/profiles/images/000/015/396/thumb/2.jpg?1368770383')"></div>
+                    <!-- <div class="round-button user-pic-xlarge" data-id="aar" style="background-image:url('http://gravatar.com/avatar/075ea4d3e28f301a3068b11fe7bd9f17.png?s=200&amp;d=http://www.hackathon.io/assets/icns/avatar/user.png')"></div> -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="square"></div>
+            </div>
+            <div class="col">
+                <span class="blocktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non sapien fermentum ipsum fermentum posuere eu non urna. Nunc lorem elit, venenatis sed enim sed, dignissim egestas augue. Nam molestie, massa sit amet fermentum ullamcorper, dui ligula aliquet sem, quis tincidunt felis tortor ac sem. Etiam non diam libero. Praesent tristique feugiat lacus quis posuere. Praesent placerat aliquet malesuada. Integer nisi leo, vulputate nec tortor non, iaculis vehicula felis. Mauris malesuada rutrum tellus, a sagittis lectus aliquam vel. Donec in massa ornare.</div></div>
+            </div>
+            <div class="headline"><span class="aligner"><a name="data">data</span></div>
+            <div class="col">stuff goez here</div>
+            <div class="col">stuff goez here</div>
+            <div class="col">stuff goez here</div>
+            <div class="headline"><span class="aligner"><a name="contact">contact</span></div>
+            <div class="col">stuff goez here</div>
+            <div class="col">stuff goez here</div>
+            <div class="col">stuff goez here</div>
+        </div>
+    </div>
+</body>
+</html>
