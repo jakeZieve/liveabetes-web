@@ -1,17 +1,17 @@
 @font-face
 {
 	font-family: zagRegular;
-	src: url('../web/fonts/zagreg.otf');
+	src: url('../liveabetes-web/fonts/zagreg.otf');
 }
 
 @font-face
 {
 	font-family: blanchCaps;
-	src: url('../web/fonts/BLANCH_CAPS.otf');
+	src: url('../liveabetes-web/fonts/BLANCH_CAPS.otf');
 }
 
 body{
-	background-image: url('../web/graphics/veggies.jpg');
+	background-image: url('../liveabetes-web/graphics/veggies.jpg');
 	font-family: blanchCaps;
 	font-size: 1.3em;
 }
@@ -100,7 +100,7 @@ body{
 	color: #990A06;
 	border-bottom: 5px #990A06;
 	transition: color .25s ease-in-out;
-	-webkit-transition: color .25s ease-in-out;
+	-liveabetes-webkit-transition: color .25s ease-in-out;
 }
 
 .spacefiller{
@@ -186,7 +186,7 @@ body{
 .square{
 	display: block;
 	margin: 0 auto;
-	background-image: url("../web/graphics/phones.png");
+	background-image: url("../liveabetes-web/graphics/phones.png");
 	background-position: center;
 	background-size: 370px;
 	width: 280px;
